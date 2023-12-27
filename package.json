@@ -2,16 +2,41 @@
 	"name": "perlin.ts",
 	"version": "1.0.0",
 	"description": "A TypeScript implementation of Perlin noise",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LeoDog896/perlin.ts.git"
+	},
+	"bugs": {
+		"url": "https://github.com/LeoDog896/perlin.ts/issues"
+	},
+	"homepage": "https://github.com/LeoDog896/perlin.ts#readme",
+	"licenses": [
+		{
+			"type": "ISC",
+			"url": "https://github.com/LeoDog896/perlin.ts/blob/master/LICENSE"
+		}
+	],
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"module": "dist/index.js",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "tsc",
-		"format": "dprint fmt"
+		"format": "dprint fmt",
+		"lint": "eslint src",
+		"lint:fix": "eslint --fix src",
+		"prepublishOnly": "npm run build"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.16.0",
+		"@typescript-eslint/parser": "^6.16.0",
 		"dprint": "^0.45.0",
+		"eslint": "^8.56.0",
 		"typescript": "^5.3.3"
 	}
 }

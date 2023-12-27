@@ -11,7 +11,7 @@ pixels, it'll be [slow](http://josephg.github.com/noisejs/demo3d.html).
 The code is based on Stefan Gustavson's implementation. Do whatever you want
 with it, etc.
 
-## How to make noise:
+## How to make noise
 
 ```javascript
 noise.seed(Math.random());
