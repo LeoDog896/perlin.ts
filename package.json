@@ -29,7 +29,12 @@
 		"lint:fix": "eslint --fix src",
 		"prepublishOnly": "npm run build"
 	},
-	"keywords": [],
+	"keywords": [
+		"perlin",
+		"noise",
+		"typescript",
+		"typescript-library"
+	],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
